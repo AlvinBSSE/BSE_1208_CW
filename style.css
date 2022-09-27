@@ -171,19 +171,7 @@ li input{
 	transition: 0.4s;
 	margin-right: 15px;
 }
-/*
-.edit{
-	position: absolute;
-	right: 75px;
-	bottom: 0;
-}
 
-.delete{
-	position: absolute;
-	right: -20px;
-	bottom: 0;
-}
-*/
 .task .actions button:hover {
 	opacity: 0.8;
 }
