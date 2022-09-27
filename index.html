@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Social Media Site</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />-->
+</head>
+<body>
+    <h1 style="text-align: center;">Simple Social Media Website</h1>
+    <div class="container">
+        <div class="left">
+            <form id="form" autocomplete="off">
+                <h3>Enter user profile details</h3>
+                <div>
+                    <label for="f_l_name"><b>Name</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter First & Last name" name="f_l_name" class="new-task-input" id="userName" required>
+                </div>
+                <div>
+                    <label for="post"><b>Write your personal statement here</b></label>
+                    <br>
+                    <textarea name="post" class="new-task-input" id="pStatement" cols="55" rows="10" required></textarea>
+                </div>
+                <div>
+                    <label for="educ"><b>Education History</b></label>
+                    <br>
+                    
+                    <input type="text" name="university_educ" class="new-task-input" id="uniHist" placeholder="Enter the University you attended" required>
+                    <br>
+                
+                    <input type="text" name="secondary_educ" class="new-task-input" id="secHist" placeholder="Enter the Secondary school you attended"required>
+                    <br>
+
+                    <input type="text" name="primary_educ" class="new-task-input" id="priHist" placeholder="Enter the Primary school you attended"required>
+                </div>
+                <div>
+                    <label for="Hobbies"><b>Hobbies</b></label>
+                    <br>
+                    <textarea name="Hobbies" class="new-task-input" id="userHobbies" cols="55" rows="5" placeholder="Enter your hobbies here" required></textarea>
+                </div>
+                <div id="msg"></div>
+                <div class="form_action--button">
+                    <input type="submit" class="new-task-submit" value="Add Profile">
+                    <input type="reset" class="new-task-submit" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        <div class="right">
+            <h3>Registered User Profiles</h3>
+            <div id="tasks">
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js_script.js"></script>
+</html>
