@@ -33,6 +33,7 @@ window. addEventListener('load', () => {
 		const img_input = document.createElement('input');
 		img_input.setAttribute('type','file');
 		img_input.setAttribute('class','file');
+	    	img_input.setAttribute('accept','image/*');
 		img_input.setAttribute('id','file'+file_count);
 		const img_label = document.createElement('label');
 		img_label.setAttribute('for','file'+file_count);
