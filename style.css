@@ -99,12 +99,16 @@ input, textarea, button {
 
 .profile-pic-div {
 	position: relative;
+	height: 200px;
+	width: 200px;
 }
 
 .photo {
-	height: 200px;
-    width: 200px;
-	border-radius: 50%;
+	height: 100%;
+    width: 100%;
+	border-radius: 45%;
+	z-index: 1;
+	position: absolute;
 }
 
 .file {
@@ -114,10 +118,11 @@ input, textarea, button {
 #uploadBtn img{
 	height: 30px;
 	width: 30px;
-	position: absolute;
-	left: 180px;
-	bottom: 25px;
 	cursor: pointer;
+	z-index: 2;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .name_n_statement{
@@ -188,4 +193,34 @@ li input{
 
 .task .actions .delete {
 	color: crimson;
+}
+
+@media (max-width: 600px){
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left {
+		width: 100%;
+	}
+	
+	.right {
+		width: 100%;
+	}
+
+	.new-task-input {
+    	width: 100%;
+	}
+
+	.main_div{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media print {
+	.left, .actions, #uploadBtn{
+		display: none;
+	}
 }
